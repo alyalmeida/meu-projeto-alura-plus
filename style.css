@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+
+/* CSS da parte HEADER*/
+
+.cabecalho {
+    background-image: url(img/Background.png);
+    height: 680px;
+    position: relative;
+}
+
+.cabecalho__infos {
+    width: 588px;
+    height: 431px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 125px;
+    left: 54px;
+
+
+}
+.cabecalho__descricao {
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.cabecalho__button {
+    font-size: 1em;
+    width: 512px;
+    padding: 16px;
+    border-radius: 8px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgba(0,0,0,0);
+
+}
+
+.button--azul {
+    background-color:#167BF7;
+    border: none;
+}
+
+.cabecalho__alerta {
+    font-size: 12px;
+    color: #C0C0C0;
+    text-align: center;
+    font-style: normal;
+}
+
+/* CSS da parde MAIN */
+
+.principal {
+    background-color: #00030C;
+}
+
+.card__title {
+    font-size: 48px;
+    width: 588px;
+    color: white;
+}
+
+.infos__descricao {
+    font-size: 16px;
+    width: 588px;
+    color: #F9F9F9;
+    ;
+}
+
+.infos__img {
+    width: 498px;
+}
+
+.infos__button {
+    font-size: 1em;
+    padding: 16px;
+    border-radius: 8px;
+    color: white;
+}
+
