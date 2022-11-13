@@ -65,21 +65,40 @@
     background-color: #00030C;
 }
 
-.card__title {
+.infos__card {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 20px;
+}
+
+.infos__title {
     font-size: 48px;
     width: 588px;
     color: white;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: flex-end;
+    justify-self: flex-start;
 }
 
 .infos__descricao {
     font-size: 16px;
     width: 588px;
     color: #F9F9F9;
-    ;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: flex-start;
+
+    
 }
 
 .infos__img {
     width: 498px;
+    grid-column: 1;
+    grid-row: 1/ span 2;
+    justify-self: flex-end;
+    
 }
 
 .infos__button {
@@ -89,3 +108,12 @@
     color: white;
 }
 
+.dispositivos__title {
+    font-size: 48px;
+    color: #FFFFFF;
+}
+
+.dispositivo__nome {
+    font-size: 32px;
+    color: #FFFFFF;
+}
