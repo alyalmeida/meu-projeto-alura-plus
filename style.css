@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 *{
     margin: 0;
     padding: 0;
@@ -8,11 +7,17 @@
     
 }
 
+body {
+    background-color: #00030C;
+}
+
 /* CSS da parte HEADER*/
 
 .cabecalho {
     background-image: url(img/Background.png);
-    height: 680px;
+    background-size: contain;
+    width: 98.7vw;
+    height: 100vh;
     position: relative;
 }
 
@@ -61,19 +66,22 @@
 
 /* CSS da parde MAIN */
 
-.principal {
-    background-color: #00030C;
+.infos {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-end; */
 }
-
-.infos__card {
+.infos__card {         
+    width: 80vw;
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 20px;
+    grid-template-columns:auto 1fr;
+    margin-top: 100px;
+    gap: 1em 5em;
+    align-self: flex-end;
 }
 
 .infos__title {
-    font-size: 48px;
+    font-size: 3em;
     width: 588px;
     color: white;
     grid-column: 2;
@@ -83,34 +91,76 @@
 }
 
 .infos__descricao {
-    font-size: 16px;
+    font-size: 1.2em;
     width: 588px;
     color: #F9F9F9;
     grid-column: 2;
     grid-row: 2;
     justify-self: flex-start;
-
-    
 }
 
 .infos__img {
-    width: 498px;
+    width: 35vw;
     grid-column: 1;
     grid-row: 1/ span 2;
-    justify-self: flex-end;
+    justify-self: center;
     
 }
 
-.infos__button {
+.infos__produto {
+    width: 80vw;
+    display: grid;
+    grid-template-columns:  1fr 1fr;
+    row-gap: 1em;
+    margin: 100px auto 0;
+}
+
+.produto__img {
+    width: 35vw;
+    grid-column: 2;
+    grid-row: 1/ span 2;
+    justify-self: flex-start;
+}
+
+.produto__descricao {
+    font-size: 1.2em;
+    width: 588px;
+    color: #F9F9F9;
+    grid-column: 1;
+    align-self: flex-end;
+    justify-self: flex-start;
+    
+}
+
+.produto__button {
     font-size: 1em;
     padding: 16px;
     border-radius: 8px;
     color: white;
+    grid-column: 1;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 
-.dispositivos__title {
+.dispositivos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    max-width: 80vw;
+    margin: 10em auto;
+}
+
+.dispositivos__title {  /*seção de dispositivos*/
     font-size: 48px;
     color: #FFFFFF;
+    grid-column: 1/ span 3;
+    justify-self: center;
+    margin-bottom: 1em;
+}
+
+.dispositivo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .dispositivo__nome {
