@@ -167,3 +167,37 @@ body {
     font-size: 32px;
     color: #FFFFFF;
 }
+
+/* CSS parde HEADER */
+
+.rodape {
+    width: 80vw;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.rodape__logo {
+   width: 150px;
+   align-self: center;
+   margin-bottom: 40px;
+}
+
+.rodape__links {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
